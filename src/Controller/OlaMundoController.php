@@ -17,14 +17,17 @@ class OlaMundoController
     public function olaMundoAction(Request $request): Response 
     {
         $pathInfo = $request->getPathInfo();
-        //$parametro = $request->query->get(key:'parametro');
         $query = $request->query->all();
         return new JsonResponse([
-            'mensagem' => 'Olá mundo', 
+            'message' => 'Olá mundo',
             'pathInfo' => $pathInfo,
-            //'parametro' => $parametro,
             'query' => $query,
         ]);
+    }
+
+    public function test(Request $request): Response
+    {
+
     }
 
 }
