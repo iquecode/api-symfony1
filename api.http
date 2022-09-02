@@ -1,0 +1,25 @@
+
+GET http://localhost:8080/ola?parametro1=teste&parametro2=valor2
+Accept: application/json
+
+###
+
+POST http://localhost:8080/medicos
+Content-Type: application/json
+
+{
+  "crm": 324234,
+  "name": "segundo medico"
+}
+
+###
+
+GET http://localhost:8080/medicos
+Accept: application/json
+
+###
+
+GET http://localhost:8080/medicos/2
+Accept: application/json
+
+###
